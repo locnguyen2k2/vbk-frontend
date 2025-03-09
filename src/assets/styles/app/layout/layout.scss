@@ -1,0 +1,45 @@
+@import "header-main";
+@import "left-sidebar";
+@import "../notify/notify";
+@import "footer-main";
+@import "../modal/modal";
+@import "../table/table";
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.ant-modal-wrap::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
+}
+
+.ant-layout {
+
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh + 20px);
+
+  > .container::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+
+  > .container {
+    z-index: 1;
+    width: 100vw;
+    padding: 78px 20px 0;
+    position: relative;
+    overflow-y: scroll;
+    height: calc(100vh - 22px);
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .ant-card-body::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+  }
+}

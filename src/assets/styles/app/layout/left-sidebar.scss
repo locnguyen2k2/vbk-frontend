@@ -1,0 +1,35 @@
+
+.left-sidebar {
+
+  .ant-menu-item,
+  .ant-menu-submenu-arrow,
+  .ant-menu-submenu-title {
+    color: $amber-500;
+  }
+
+  button {
+    position: absolute;
+    z-index: 9999;
+    top: calc(56px / 2);
+    transform: translateY(-50%);
+    right: 0;
+    border: none;
+    color: #FFFFFF;
+    padding: 0;
+    background: none;
+    font-size: 1.2rem;
+  }
+
+  button:hover {
+    color: #FFFFFF;
+    background: none !important;
+  }
+
+  ul {
+    li.ant-menu-item-selected,
+    .ant-menu-submenu-selected .ant-menu-submenu-title {
+      color: $amber-500;
+      background: $blue-900;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  margin: 0 auto 7px;
+  object-fit: cover;
+  image-rendering: smooth;
+  object-position: center;
+}
+
+.label {
+  color: $gray-800;
+  font-size: 1.2rem;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.blur-primary {
+  backdrop-filter: blur(3px);
+}
+
+.blur-secondary {
+  backdrop-filter: blur(8px);
+}
+
+.border-primary {
+  border: 0.1em solid $darkBlue-500;
+}
+
+.border-secondary {
+  border: 2px solid $gray-900;
+}
+
+.rad-primary {
+  border-radius: 8px;
+}
+
+.rad-secondary {
+  border-radius: 13px;
+}
+
+.rad-t-primary {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+}
+
+.rad-b-primary {
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.rad-l-primary {
+  border-bottom-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+}
+
+.rad-r-primary {
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.flex-center {
+  display: flex !important;
+  align-content: center !important;
+  justify-content: center !important;
+}
+
+.flex-col-center {
+  display: flex !important;
+  flex-direction: column !important;
+  align-content: center;
+  justify-content: center;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+}
+
+.ant-picker {
+  width: 100%;
+}
+
+.ant-space {
+  position: relative;
+  width: 100%;
+}
+
+/* Smartphones (landscape) */
+@media only screen and (max-width: 751px) {
+  .login-carousel {
+    display: none;
+  }
+
+  .ant-form.login {
+    margin: 0 auto;
+  }
+}

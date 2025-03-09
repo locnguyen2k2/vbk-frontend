@@ -1,0 +1,33 @@
+.ant-modal-root {
+
+  .ant-modal-wrap {
+    top: 0;
+  }
+
+  .ant-modal-mask {
+    z-index: 1;
+  }
+}
+
+.ant-modal {
+
+  .ant-modal-content {
+    padding-bottom: 0;
+
+    .ant-card-body {
+      padding-bottom: 0;
+      max-height: calc(100vh - 78px - 100px);
+    }
+
+    .draggable-area {
+      top: 0;
+      left: 0;
+      padding: 8px;
+      width: 100%;
+      height: 100%;
+      cursor: move;
+      position: fixed;
+      font-size: 1rem;
+    }
+  }
+}

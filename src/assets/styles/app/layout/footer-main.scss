@@ -1,0 +1,10 @@
+#footer {
+  left: 50%;
+  bottom: 0;
+  height: 20px;
+  z-index: 9999;
+  color: $gray-50;
+  position: absolute;
+  background: transparent;
+  transform: translateX(-50%);
+}
