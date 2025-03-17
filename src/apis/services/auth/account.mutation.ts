@@ -14,6 +14,12 @@ export const LOGIN_MUTATION = gql`
     }
 `;
 
+export const REGISTER_MUTATION = gql`
+    mutation register($registerArgs: RegisterArgs!) {
+        register(registerArgs: $registerArgs)
+    }
+`;
+
 export const CHANGE_PASSWORD_MUTATION = gql`
     mutation changePassword($changePasswordArgs: ChangePasswordArgs!) {
         changePassword(changePasswordArgs: $changePasswordArgs)
